@@ -16,17 +16,15 @@ const socials = [
 
 const Footer = () => {
   return (
-    <footer className="bg-zinc-950 border-t border-white/[0.06] relative overflow-hidden">
+    <footer className="bg-zinc-950 border-t border-white/6 relative overflow-hidden">
 
-      {/* Background grid */}
-      <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.01)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.01)_1px,transparent_1px)] bg-[size:64px_64px]" />
+      <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.01)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.01)_1px,transparent_1px)] bg-size-[64px_64px]" />
 
       <div className="max-w-6xl mx-auto px-6 relative z-10">
 
-        {/* Top — Brand + Nav + Socials */}
-        <div className="grid md:grid-cols-[1fr_auto_auto] gap-10 items-start py-14 border-b border-white/[0.06]">
+        <div className="grid md:grid-cols-[1fr_auto_auto] gap-10 items-start py-14 border-b border-white/6">
 
-          {/* Brand */}
+     
           <div className="flex flex-col gap-4 max-w-xs">
             <a href="#home" className="text-white text-xl font-bold tracking-tight select-none group w-fit">
               Vignesh
@@ -35,14 +33,14 @@ const Footer = () => {
             <p className="text-zinc-500 text-sm leading-relaxed">
               Full-stack developer building clean, scalable web applications with modern technologies.
             </p>
-            {/* Status */}
-            <div className="flex items-center gap-2 w-fit bg-zinc-900/60 border border-white/[0.06] px-3 py-1.5 rounded-full">
+       
+            <div className="flex items-center gap-2 w-fit bg-zinc-900/60 border border-white/6 px-3 py-1.5 rounded-full">
               <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
               <span className="text-[11px] font-medium text-zinc-400">Available for work</span>
             </div>
           </div>
 
-          {/* Nav links */}
+      
           <div className="flex flex-col gap-3">
             <p className="text-[10px] font-semibold tracking-[0.18em] uppercase text-zinc-600 mb-1">
               Navigation
@@ -56,7 +54,7 @@ const Footer = () => {
             ))}
           </div>
 
-          {/* Socials */}
+     
           <div className="flex flex-col gap-3">
             <p className="text-[10px] font-semibold tracking-[0.18em] uppercase text-zinc-600 mb-1">
               Connect
@@ -69,7 +67,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 text-sm text-zinc-500 hover:text-white transition-colors duration-200 group"
               >
-                <span className="w-7 h-7 rounded-lg bg-white/[0.04] border border-white/[0.07] group-hover:border-orange-500/30 group-hover:bg-orange-500/8 flex items-center justify-center transition-all duration-200">
+                <span className="w-7 h-7 rounded-lg bg-white/4 border border-white/[0.07] group-hover:border-orange-500/30 group-hover:bg-orange-500/8 flex items-center justify-center transition-all duration-200">
                   <Icon size={13} className="group-hover:text-orange-400 transition-colors" />
                 </span>
                 {label}

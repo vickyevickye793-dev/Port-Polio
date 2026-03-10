@@ -72,7 +72,7 @@ const Navbar = () => {
           isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
         }`}
       >
-        <div className="bg-zinc-950/98 border-t border-white/[0.06] px-6 pb-6 pt-2">
+        <div className="bg-zinc-950/98 border-t border-white/6 px-6 pb-6 pt-2">
           <ul className="flex flex-col">
             {links.map((link, i) => (
               <li key={link.href}>
@@ -82,7 +82,7 @@ const Navbar = () => {
                     setActive(link.href);
                     setIsOpen(false);
                   }}
-                  className="flex items-center gap-4 py-3.5 border-b border-white/[0.05] last:border-none text-zinc-400 hover:text-white transition-colors duration-200 group"
+                  className="flex items-center gap-4 py-3.5 border-b border-white/5 last:border-none text-zinc-400 hover:text-white transition-colors duration-200 group"
                 >
                   <span className="text-[10px] font-bold tracking-wider text-orange-500/70 w-5">
                     0{i + 1}

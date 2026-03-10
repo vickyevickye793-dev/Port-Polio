@@ -7,7 +7,7 @@ const HeroSection = () => {
       id="home"
       className="min-h-screen flex items-center bg-zinc-950 pt-20 relative overflow-hidden"
     >
-      <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:64px_64px]" />
+      <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-size-[64px_64px]" />
 
       <div className="absolute top-1/3 right-1/4 w-96 h-96 bg-orange-500/10 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-1/4 left-1/4 w-64 h-64 bg-orange-500/5 rounded-full blur-2xl pointer-events-none" />
@@ -27,7 +27,7 @@ const HeroSection = () => {
 
           <h1 className="text-5xl md:text-6xl font-bold leading-[1.1] tracking-tight text-white">
             Hi, I'm{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-600">
+            <span className="text-transparent bg-clip-text bg-linear-to-r from-orange-400 to-orange-600">
               Vignesh
             </span>
             <br />
@@ -64,17 +64,17 @@ const HeroSection = () => {
         <div className="relative flex justify-center items-center">
 
           
-          <div className="absolute w-[340px] h-[420px] md:w-[400px] md:h-[480px] rounded-2xl border border-white/5 -top-2 left-[calc(50%-166px)] md:left-[calc(50%-196px)]" />
+          <div className="absolute w-85 h-105 md:w-100 md:h-120 rounded-2xl border border-white/5 -top-2 left-[calc(50%-166px)] md:left-[calc(50%-196px)]" />
 
        
-          <div className="relative w-80 h-[26rem] md:w-96 md:h-[28rem] rounded-2xl overflow-hidden border border-white/10 shadow-2xl shadow-black/60">
+          <div className="relative w-80 h-104 md:w-96 md:h-112 rounded-2xl overflow-hidden border border-white/10 shadow-2xl shadow-black/60">
             <img
               src={image}
               alt="Vignesh Developer"
               className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
             />
         
-            <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/60 via-transparent to-transparent" />
+            <div className="absolute inset-0 bg-linear-to-t from-zinc-950/60 via-transparent to-transparent" />
           </div>
 
           <div className="absolute -left-4 top-10 flex flex-col gap-2">
@@ -104,4 +104,4 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection;
+export default HeroSection

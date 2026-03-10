@@ -11,13 +11,13 @@ const ContactSection = () => {
       id="contact"
       className="py-28 bg-zinc-950 relative overflow-hidden"
     >
-      {/* Background */}
-      <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.015)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.015)_1px,transparent_1px)] bg-[size:64px_64px]" />
+  
+      <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.015)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.015)_1px,transparent_1px)] bg-size-[64px_64px]" />
       <div className="absolute bottom-0 right-1/4 w-96 h-64 bg-orange-500/8 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-orange-500/5 rounded-full blur-2xl pointer-events-none" />
 
       <div className="max-w-5xl mx-auto px-6 relative z-10">
-        {/* Heading */}
+      
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-20">
           <div>
             <div className="flex items-center gap-2 mb-4">
@@ -39,9 +39,9 @@ const ContactSection = () => {
         </div>
 
         <div className="grid md:grid-cols-[1fr_1.5fr] gap-8 items-start">
-          {/* Left — Info */}
+         
           <div className="flex flex-col gap-5">
-            {/* Contact cards */}
+    
             {[
               {
                 icon: Mail,
@@ -60,7 +60,7 @@ const ContactSection = () => {
               return (
                 <div
                   key={item.label}
-                  className="flex items-center gap-4 bg-zinc-900/50 border border-white/[0.06] rounded-2xl px-6 py-5 group hover:border-orange-500/20 transition-all duration-200"
+                  className="flex items-center gap-4 bg-zinc-900/50 border border-white/6 rounded-2xl px-6 py-5 group hover:border-orange-500/20 transition-all duration-200"
                 >
                   <div className="w-10 h-10 rounded-xl bg-orange-500/10 border border-orange-500/20 flex items-center justify-center shrink-0">
                     <Icon size={16} className="text-orange-400" />
@@ -87,10 +87,9 @@ const ContactSection = () => {
             })}
           </div>
 
-          {/* Right — Form */}
           <form
             onSubmit={handleSubmit}
-            className="bg-zinc-900/50 border border-white/[0.06] rounded-2xl p-8 flex flex-col gap-4"
+            className="bg-zinc-900/50 border border-white/6 rounded-2xl p-8 flex flex-col gap-4"
           >
             <h3 className="text-xs font-semibold tracking-[0.18em] uppercase text-zinc-500 mb-1">
               Send a Message
@@ -101,27 +100,27 @@ const ContactSection = () => {
                 type="text"
                 placeholder="Your Name"
                 required
-                className="w-full bg-white/[0.03] border border-white/[0.07] focus:border-orange-500/40 focus:bg-orange-500/[0.03] rounded-xl px-4 py-3 text-sm text-white placeholder-zinc-600 outline-none transition-all duration-200"
+                className="w-full bg-white/3 border border-white/[0.07] focus:border-orange-500/40 focus:bg-orange-500/3 rounded-xl px-4 py-3 text-sm text-white placeholder-zinc-600 outline-none transition-all duration-200"
               />
               <input
                 type="email"
                 placeholder="Your Email"
                 required
-                className="w-full bg-white/[0.03] border border-white/[0.07] focus:border-orange-500/40 focus:bg-orange-500/[0.03] rounded-xl px-4 py-3 text-sm text-white placeholder-zinc-600 outline-none transition-all duration-200"
+                className="w-full bg-white/3 border border-white/[0.07] focus:border-orange-500/40 focus:bg-orange-500/3 rounded-xl px-4 py-3 text-sm text-white placeholder-zinc-600 outline-none transition-all duration-200"
               />
             </div>
 
             <input
               type="text"
               placeholder="Subject"
-              className="w-full bg-white/[0.03] border border-white/[0.07] focus:border-orange-500/40 focus:bg-orange-500/[0.03] rounded-xl px-4 py-3 text-sm text-white placeholder-zinc-600 outline-none transition-all duration-200"
+              className="w-full bg-white/3 border border-white/[0.07] focus:border-orange-500/40 focus:bg-orange-500/3 rounded-xl px-4 py-3 text-sm text-white placeholder-zinc-600 outline-none transition-all duration-200"
             />
 
             <textarea
               rows={5}
               placeholder="Your Message"
               required
-              className="w-full bg-white/[0.03] border border-white/[0.07] focus:border-orange-500/40 focus:bg-orange-500/[0.03] rounded-xl px-4 py-3 text-sm text-white placeholder-zinc-600 outline-none resize-none transition-all duration-200"
+              className="w-full bg-white/3 border border-white/[0.07] focus:border-orange-500/40 focus:bg-orange-500/3 rounded-xl px-4 py-3 text-sm text-white placeholder-zinc-600 outline-none resize-none transition-all duration-200"
             />
 
             <button

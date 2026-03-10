@@ -26,7 +26,7 @@ const AboutSection = () => {
     <section id="about" className="py-28 bg-zinc-950 relative overflow-hidden">
 
   
-      <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.015)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.015)_1px,transparent_1px)] bg-[size:64px_64px]" />
+      <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.015)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.015)_1px,transparent_1px)] bg-size-[64px_64px]" />
 
    
       <div className="absolute top-0 left-1/3 w-96 h-64 bg-orange-500/8 rounded-full blur-3xl pointer-events-none" />
@@ -66,7 +66,7 @@ const AboutSection = () => {
             return (
               <div
                 key={i}
-                className="group relative bg-zinc-900/60 border border-white/[0.06] hover:border-orange-500/30 rounded-2xl p-7 transition-all duration-300 hover:bg-zinc-900/80"
+                className="group relative bg-zinc-900/60 border border-white/6 hover:border-orange-500/30 rounded-2xl p-7 transition-all duration-300 hover:bg-zinc-900/80"
               >
             
                 <div className="flex items-start justify-between mb-6">
@@ -93,7 +93,7 @@ const AboutSection = () => {
                 </span>
 
                
-                <div className="absolute bottom-0 left-6 right-6 h-px bg-gradient-to-r from-transparent via-orange-500/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-full" />
+                <div className="absolute bottom-0 left-6 right-6 h-px bg-linear-to-r from-transparent via-orange-500/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-full" />
               </div>
             );
           })}
@@ -101,7 +101,7 @@ const AboutSection = () => {
 
       </div>
     </section>
-  );
+    );
 };
 
 export default AboutSection;

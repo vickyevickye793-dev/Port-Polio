@@ -20,7 +20,7 @@ const tagColor = {
 const SkillsSection = () => {
   return (
     <section id="skills" className="py-28 bg-zinc-950 relative overflow-hidden">
-      <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.015)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.015)_1px,transparent_1px)] bg-[size:64px_64px]" />
+      <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.015)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.015)_1px,transparent_1px)] bg-size-[64px_64px]" />
       <div className="absolute top-1/2 left-1/4 w-80 h-80 bg-orange-500/6 rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-5xl mx-auto px-6 relative z-10">
@@ -43,7 +43,7 @@ const SkillsSection = () => {
         </div>
 
         <div className="grid md:grid-cols-[1.2fr_1fr] gap-6 items-start">
-          <div className="bg-zinc-900/50 border border-white/[0.06] rounded-2xl p-8 flex flex-col gap-7">
+          <div className="bg-zinc-900/50 border border-white/6 rounded-2xl p-8 flex flex-col gap-7">
             <h3 className="text-xs font-semibold tracking-[0.18em] uppercase text-zinc-500 mb-1">
               Proficiency
             </h3>
@@ -69,7 +69,7 @@ const SkillsSection = () => {
 
                 <div className="h-1.5 bg-white/5 rounded-full overflow-hidden">
                   <div
-                    className="h-full bg-gradient-to-r from-orange-500 to-amber-400 rounded-full"
+                    className="h-full bg-linear-to-r from-orange-500 to-amber-400 rounded-full"
                     style={{ width: `${skill.level}%` }}
                   />
                 </div>
@@ -78,7 +78,7 @@ const SkillsSection = () => {
           </div>
 
           <div className="flex flex-col gap-5">
-            <div className="bg-zinc-900/50 border border-white/[0.06] rounded-2xl p-7">
+            <div className="bg-zinc-900/50 border border-white/6 rounded-2xl p-7">
               <h3 className="text-xs font-semibold tracking-[0.18em] uppercase text-zinc-500 mb-5">
                 Tools & Environment
               </h3>
@@ -86,7 +86,7 @@ const SkillsSection = () => {
                 {tools.map((tool) => (
                   <div
                     key={tool}
-                    className="flex items-center gap-2.5 bg-white/[0.03] border border-white/[0.06] hover:border-orange-500/25 hover:bg-orange-500/5 rounded-xl px-4 py-3 transition-all duration-200 group cursor-default"
+                    className="flex items-center gap-2.5 bg-white/3 border border-white/6 hover:border-orange-500/25 hover:bg-orange-500/5 rounded-xl px-4 py-3 transition-all duration-200 group cursor-default"
                   >
                     <span className="w-1.5 h-1.5 rounded-full bg-orange-500/50 group-hover:bg-orange-400 transition-colors" />
                     <span className="text-sm font-medium text-zinc-400 group-hover:text-zinc-200 transition-colors">
